@@ -1,1 +1,7 @@
-https://www.dropbox.com/scl/fi/o5psldqeqqwd7pcu4fevf/APCS-Project-design-doc-Mega-Connect-5.paper?rlkey=q0wvhc6ch258t5tooi3ahqepw&dl=0
+How to run code:
+
+1. Clone the repo
+2. Run in intellij
+    - Set up project structure to be SDK 17 and Language Level 11
+3. Press the run button within the Main class
+4. Enjoy
