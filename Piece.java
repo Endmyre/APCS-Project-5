@@ -3,7 +3,7 @@ public class Piece {
     private int col;
     private int color; // 1 = X, 2 = O
 
-    public Piece(int col, int color, Board board) { // set row bad!
+    public Piece(int col, int color, Board board) {
         this.col = col;
         this.row = findRow(col, board);
         this.color = color;

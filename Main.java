@@ -14,7 +14,7 @@ public class Main {
         remainingMegaPiece[1] = 1;
         while (true) {
             board.displayAll();
-            System.out.println("Player: " + player + ":");
+            System.out.println("Player " + player + ":");
             Piece p;
             String isMegapiece;
             if (remainingMegaPiece[player - 1] != 0) {
@@ -27,12 +27,12 @@ public class Main {
                 System.out.println("Enter the column you would like to place your megapiece at.");
                 String col = input.nextLine();
                 if (!isValidCol(col, true)) {
-                    System.out.println("Not a valid piece placement.");
+                    System.out.println("Incorrect input or not a valid piece placement.");
                     continue;
                 }
                 p = new MegaPiece(Integer.parseInt(col) - 1, player, board);
                 if (!isValidRow(p)) {
-                    System.out.println("Not a valid piece placement.");
+                    System.out.println("Incorrect input or not a valid piece placement.");
                     continue;
                 }
                 board.placePiece(p);
@@ -41,12 +41,12 @@ public class Main {
                 System.out.println("Enter the column you would like to place your piece at.");
                 String col = input.nextLine();
                 if (!isValidCol(col, false)) {
-                    System.out.println("Not a valid piece placement.");
+                    System.out.println("Incorrect input or not a valid piece placement.");
                     continue;
                 }
                 p = new Piece(Integer.parseInt(col) - 1, player, board);
                 if (!isValidRow(p)) {
-                    System.out.println("Not a valid piece placement.");
+                    System.out.println("Incorrect input or not a valid piece placement.");
                     continue;
                 }
                 board.placePiece(p);
@@ -55,7 +55,7 @@ public class Main {
                 continue;
             }
             if (board.checkForWin(player)) {
-                System.out.println("player: " + player + " has won!");
+                System.out.println("Player " + player + " has won!");
                 board.displayAll();
                 break;
             }
