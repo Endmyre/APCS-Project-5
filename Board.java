@@ -1,4 +1,4 @@
-public class Board {
+public class Board { //POTATO?
     private final int[][] boardPieces;
     public Board(int x, int y) {
         boardPieces = new int[x][y];
